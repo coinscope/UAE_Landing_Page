@@ -12,7 +12,9 @@ $(function() {
 	function initMap(){
 		contactMap = new google.maps.Map($('.contact-map')[0], {
 			center: {lat: 25.6733622, lng: 55.7350362},
-			zoom: 12
+			zoom: 12,
+			scrollwheel: false,
+	    zoomControl: true,
 		});
 
 		var marker = new google.maps.Marker({
